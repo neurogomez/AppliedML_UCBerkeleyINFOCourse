@@ -151,8 +151,26 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# Ignore all data files 
-progresa_sample.csv
-gapminder.csv
-cal_housing_data_clean.csv
-psam_p06.csv
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Labeled Faces in the Wild dataset (problem-sets/07-facial-recognition-pca):
+# it's already committed in this repo's git history (~266MB across 13k+
+# files), so this line alone won't shrink the repo, but it stops the data
+# from being re-added if it's ever removed from tracking and history-rewritten
+# (see README for details on that tradeoff).
+problem-sets/07-facial-recognition-pca/lfw_funneled/
+
+# Editors
+.vscode/
+.idea/
+
+# Local-only folders: not part of the public portfolio
+# _reference_not_my_work/ holds instructor-authored material (solution keys,
+# lecture slides) kept for personal study, not for public redistribution.
+# _to_delete/ holds redundant PDF/HTML exports and accidental duplicate
+# files staged for cleanup, kept temporarily for review before deleting.
+_reference_not_my_work/
+_to_delete/
