@@ -2,11 +2,11 @@
 
 Labs and problem sets from **INFO 251: Applied Machine Learning** at the UC Berkeley School of Information: a course covering the full applied ML pipeline, from causal inference and regression through tree-based models, neural networks, and unsupervised learning.
 
-Each problem set below is my own submitted work, implementing methods from scratch (gradient descent, k-nearest neighbors, cross-validation) alongside applied use of scikit-learn, Keras/TensorFlow, and folktables, on real-world datasets spanning economics, housing, income, images, and faces.
+Each notebook below is my own submitted work, implementing methods from scratch (gradient descent, k-nearest neighbors, cross-validation) alongside applied use of scikit-learn, Keras/TensorFlow, and folktables, on real-world datasets spanning economics, housing, income, images, and faces.
 
 ## Syllabus: topics, techniques, and datasets
 
-| # | Problem set | Topics | Techniques | Dataset |
+| # | Mini projects | Topics | Techniques | Dataset |
 |---|---|---|---|---|
 | 1 | [Python & Pandas Fundamentals](problem-sets/01-python-pandas-fundamentals) | Data exploration | Pandas, descriptive statistics | California Housing |
 | 2 | [Causal Inference](problem-sets/02-causal-inference-did) | Differences-in-differences, fixed effects, spillover effects | Linear regression, panel data methods | PROGRESA (Mexican conditional cash transfer program) |
@@ -18,7 +18,7 @@ Each problem set below is my own submitted work, implementing methods from scrat
 
 ## Labs
 
-Shorter, guided exercises. Only labs where I have my own completed work are included here (see [Notes on this repo](#notes-on-this-repo) below).
+Shorter, guided exercises done in class. 
 
 | Lab | Topics | Dataset |
 |---|---|---|
@@ -48,14 +48,14 @@ INFO201_AppliedMachineLearning/
     └── 05-gradient-descent/
 ```
 
-Each problem set folder contains one notebook with all analysis, code, and written answers inline, plus any small supporting dataset it needs to run standalone.
+Each project folder contains one notebook with all analysis, code, and written answers inline, plus any small supporting dataset it needs to run standalone.
 
 ## Notes on this repo
 
 A few things worth knowing if you're browsing this:
 
-- **Instructor material is excluded from the public repo.** The course provided official solution notebooks and lecture slides for some labs; those aren't my own work, so they're kept in a local, gitignored `_reference_not_my_work/` folder for my own studying rather than published here. This means Labs 1 and 2 aren't shown above: only the instructor's key existed for those, no version of my own.
-- **Redundant exports were cleaned up.** Most notebooks originally also had PDF and HTML exports (required for bCourses submission), duplicating the same content already in the `.ipynb` files. Since GitHub renders notebooks directly, those duplicates were removed to keep the repo focused. The two Lab notebooks whose `.ipynb` cell outputs were cleared (Lab 4, Lab 5) keep their PDF alongside them, since that's currently the only place the rendered plots/results are visible.
+- **Instructor material is excluded from the public repo.** 
+- **Redundant exports were cleaned up.** The two Lab notebooks whose `.ipynb` cell outputs were cleared (Lab 4, Lab 5) keep their PDF alongside them, since that's currently the only place the rendered plots/results are visible.
 - **The LFW face dataset is large.** `problem-sets/07-facial-recognition-pca/lfw_funneled/` is about 266MB across 13,000+ image files, already part of this repo's git history. Cloning this repo will be slower than the others as a result. Shrinking that would mean rewriting git history (e.g. with `git filter-repo`), which is a bigger, riskier operation worth deciding on separately rather than doing automatically here.
 
 ## Author
